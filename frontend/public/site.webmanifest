@@ -1,0 +1,13 @@
+{
+  "name": "AgroTrace",
+  "short_name": "AgroTrace",
+  "description": "Trazabilidad agrícola verificable con cadena SHA-256 e inteligencia artificial.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#12341f",
+  "theme_color": "#12341f",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
