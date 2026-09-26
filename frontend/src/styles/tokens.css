@@ -1,0 +1,102 @@
+/* ---------------------------------------------------------------------------
+   AgroTrace · sistema de diseño "agro-editorial cálido"
+   Tipografía: Fraunces (display serif) + Inter Tight (texto) + IBM Plex Mono (hashes)
+   Los colores de estado están verificados contra las superficies crema y blanca
+   (AA para texto). El ámbar brillante se usa solo como relleno decorativo:
+   cuando lleva texto se usa --amber-ink.
+--------------------------------------------------------------------------- */
+
+:root {
+  /* --- superficies --- */
+  --surface-page: #faf6ee;
+  --surface-card: #ffffff;
+  --surface-sunk: #f3ede1;
+  --surface-ink: #12341f;
+  --surface-ink-2: #1a4227;
+  --surface-ink-3: #24563a;
+
+  /* --- tinta --- */
+  --ink: #12341f;
+  --ink-2: #33473b;
+  --ink-muted: #5b6b5f;
+  --ink-faint: #8a978e;
+  --ink-on-dark: #f4efe4;
+  --ink-on-dark-muted: rgba(244, 239, 228, 0.62);
+  --ink-on-dark-faint: rgba(244, 239, 228, 0.38);
+
+  /* --- verdes de marca --- */
+  --green-900: #12341f;
+  --green-800: #1a4227;
+  --green-700: #1d6b3c;
+  --green-600: #2a7d48;
+  --green-500: #3f9d5f;
+  --green-400: #6bbc85;
+  --green-200: #b9dfc6;
+  --green-100: #ddf0e4;
+
+  /* --- ámbar (acento cálido) --- */
+  --amber: #c8871d;
+  --amber-ink: #8f6212; /* usar cuando el ámbar lleva texto */
+  --amber-soft: #f6e3bd;
+  --amber-wash: #fdf4e2;
+
+  /* --- estado (siempre con icono o etiqueta, nunca color solo) --- */
+  --ok: #1d6b3c;
+  --ok-wash: #e6f4ea;
+  --warn: #8f6212;
+  --warn-wash: #fdf1da;
+  --danger: #b03a2e;
+  --danger-wash: #fbeae7;
+  --info: #2b5f8a;
+  --info-wash: #e8f1f8;
+
+  /* --- gráficas --- */
+  --chart-series: #2a7d48;
+  --chart-series-soft: rgba(42, 125, 72, 0.14);
+  --chart-grid: rgba(18, 52, 31, 0.08);
+  --chart-axis: #8a978e;
+
+  /* --- bordes --- */
+  --line: rgba(18, 52, 31, 0.1);
+  --line-strong: rgba(18, 52, 31, 0.18);
+  --line-on-dark: rgba(244, 239, 228, 0.14);
+
+  /* --- tipografía --- */
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-sans: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.875rem;
+  --text-2xl: 2.5rem;
+  --text-3xl: clamp(2.25rem, 5.5vw, 3.75rem);
+
+  /* --- espaciado y forma --- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4.5rem;
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 16px;
+  --r-xl: 24px;
+  --r-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(18, 52, 31, 0.06);
+  --shadow-md: 0 2px 8px rgba(18, 52, 31, 0.07), 0 1px 2px rgba(18, 52, 31, 0.05);
+  --shadow-lg: 0 12px 32px rgba(18, 52, 31, 0.1), 0 2px 8px rgba(18, 52, 31, 0.05);
+
+  --sidebar-w: 248px;
+  --topbar-h: 64px;
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}

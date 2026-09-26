@@ -1,0 +1,24 @@
+{
+  // El .env vive en backend/, no en la raiz del repo. Sin esta linea VS Code
+  // busca ${workspaceFolder}/.env y no encuentra nada.
+  "python.envFile": "${workspaceFolder}/backend/.env",
+
+  // Inyecta ese .env en las terminales integradas. La aplicacion NO lo necesita
+  // (lee el archivo por su cuenta con pydantic-settings), pero sirve para correr
+  // scripts sueltos a mano y quita el aviso de la extension de Python.
+  "python.terminal.useEnvFile": true,
+
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.ruff_cache": true
+  },
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.venv": true,
+    "legacy/**": true
+  }
+}
