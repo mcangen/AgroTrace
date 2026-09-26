@@ -288,3 +288,10 @@ npm run typecheck    # solo TypeScript
 
 Para empezar de cero, borra `backend/agrotrace.db` y reinicia: se vuelve a sembrar
 la cuenta de demostración.
+
+## Despliegue
+
+En producción, el backend sirve el build del frontend directamente (un solo
+servicio, sin CORS entre dominios) — ver el bloque final de
+[`backend/app/main.py`](backend/app/main.py). Instrucciones completas para
+desplegar en Render, paso a paso, en [`DEPLOY.md`](DEPLOY.md).
